@@ -1,11 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cout<<"Enter a number :";
-    cin>>n;
-    for(int i=1;i<=10;i++){
-        cout<<n*i<<endl;
-    }
+    int a;
+    cout<<"Enter a :";
+    cin>>a;
+    int b;
+    cout<<"Enter b :";
+    cin>>b;
+    int product = a*b;
+    cout<<"The product of a and b is :"<<product;
     return 0;
 }
