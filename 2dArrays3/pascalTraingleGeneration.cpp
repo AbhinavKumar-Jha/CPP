@@ -6,8 +6,8 @@
 // int main(){
 //     int m=5;
 //     vector<vector<int> > v(m);
-//     for(int i=1;i<=m;i++){
-//         vector<int> a(i);
+//     for(int i=0;i<=m;i++){
+//         vector<int> a(i+1);
 //         v.push_back(a);
 //     }
 //     // Generate
