@@ -1,5 +1,5 @@
-// // Leetcode 240
-
+// Leetcode 240
+// Search 2D Matrix 
 // class Solution {
 //     public:
 //         bool searchMatrix(vector<vector<int>>& matrix, int target) {
@@ -15,3 +15,6 @@
 //             return false;
 //         }
 //     };
+
+// We can do this by simple method also but that method is not time effiecient and needs a lot of time and space complexity so we prefer above method to solve this problem
+
