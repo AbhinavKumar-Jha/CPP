@@ -46,7 +46,9 @@ int main(){
     // reverse(s.begin(), s.end()); // so we can reverse some part of the string also by their index number 
     // cout<<s<<endl;
     // reverse(s.begin()+4, s.end()-1);
-    reverse(s.begin()+4, s.end());
-    cout<<s<<endl;
+    reverse(s.begin()+2, s.begin()+5); // this is used when we want to reverse in the middle of the string just like give the starting and last + 1 then the middle string gets reversed.
+    cout<<s<<endl; 
+    // reverse(s.begin()+4, s.end());
+    // cout<<s<<endl;
     return 0;
 }
