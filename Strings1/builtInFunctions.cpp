@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<algorithm>
 using namespace std;
 int main(){
 //  // This is for finding the length of the string
@@ -37,5 +38,12 @@ int main(){
     // cout<<s<<endl;
     // s = "xyz" + s;
     // cout<<s<<endl;
+
+// // This is used to reverse the entire string
+
+    string s = "Abhinav";
+    cout<<s<<endl;
+    reverse(s.begin(), s.end());
+    cout<<s<<endl;
     return 0;
 }
