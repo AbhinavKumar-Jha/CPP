@@ -15,11 +15,19 @@ int main(){
 // //    str.push_back("def"); // We can't use this we can only push char not string
 //     cout<<str<<endl;
 
+    // string s = "Abhinav";
+    // cout<<s<<endl;
+    // s.pop_back(); // it removes the last char 
+    // s.pop_back();  
+    // s.pop_back(); 
+    // cout<<s<<endl;
+
     string s = "Abhinav";
     cout<<s<<endl;
-    s.pop_back(); // it removes the last char 
-    s.pop_back();  
-    s.pop_back(); 
+    string t = "Jha";
+    s = s + t; // + is used here to add two strings 
+    cout<<s<<endl;
+    s = "xyz" + s;
     cout<<s<<endl;
     return 0;
 }
