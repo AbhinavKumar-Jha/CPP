@@ -41,9 +41,12 @@ int main(){
 
 // // This is used to reverse the entire string
 
-    string s = "Abhinav";
+    string s = "Abhinav"; // index is 0 1 2 3 4 5 6 of Abhinav
     cout<<s<<endl;
-    reverse(s.begin(), s.end());
+    // reverse(s.begin(), s.end()); // so we can reverse some part of the string also by their index number 
+    // cout<<s<<endl;
+    // reverse(s.begin()+4, s.end()-1);
+    reverse(s.begin()+4, s.end());
     cout<<s<<endl;
     return 0;
 }
