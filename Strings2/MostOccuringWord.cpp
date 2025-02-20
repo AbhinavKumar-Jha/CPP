@@ -13,7 +13,6 @@ int main(){
         v.push_back(temp);
     }
    
-    cout<<endl;
     sort(v.begin(), v.end());
     int maxCount=1;
     int count=1;
