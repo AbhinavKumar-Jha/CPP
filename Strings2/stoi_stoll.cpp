@@ -5,6 +5,10 @@ using namespace std;
 int main(){
     string str ="123456";
     int x = stoi(str);
-    cout<<x;
+    cout<<x<<endl;
+
+    string s ="1234567891234";
+    int a = stoll(s);
+    cout<<a;
     return 0;
 }
