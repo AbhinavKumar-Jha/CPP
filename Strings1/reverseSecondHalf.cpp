@@ -5,6 +5,7 @@
 using namespace std;
 int main(){
     string s;
+    cout<<"Enter a String :";
     // input even length string
     getline(cin,s);
     int n = s.length();
