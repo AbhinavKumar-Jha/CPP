@@ -4,7 +4,10 @@
 #include<sstream>
 using namespace std;
 int main(){
-    string str = "raghav is a coding teacher";
+//  // We can take input of strings also
+    string str;
+    getline(cin,str);
+    // string str = "raghav is a coding teacher";
     stringstream ss(str);
     string temp;
     while(ss>>temp){
