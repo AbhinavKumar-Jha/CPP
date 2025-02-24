@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Animation</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            font-size: 3em;
+            text-align: center;
+            animation: colorChange 5s linear infinite alternate; /* The animation */
+        }
+
+        @keyframes colorChange {
+            0% { color: #333; }      /* Start color (dark gray) */
+            25% { color: #007bff; }   /* Blue */
+            50% { color: #28a745; }   /* Green */
+            75% { color: #dc3545; }   /* Red */
+            100% { color: #333; }     /* Back to start color */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Animated Color Change Heading</h1>
+
+</body>
+</html>

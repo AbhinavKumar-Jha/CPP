@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <table>
+            <tr><td>Name</td><td>Email</td><td>Password</td>
+                <td>Phone No</td></tr>
+                {% for i in x %}
+                <tr>
+                    <td>{{i.name}}</td><td>{{i.email}}</td><td>
+                        {{i.password}}</td><td>{{i.phnno}}</td>
+                        <td><a href="del/{{i.id}}">Delete</a></td>
+                        <td><a href="edit/{{i.id}}">Edit</a></td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </body>
+</html>
