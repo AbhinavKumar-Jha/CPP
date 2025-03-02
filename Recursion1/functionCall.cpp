@@ -8,7 +8,8 @@ int product(int a, int b){
     return a*b;
 }
 int main(){
-    int x = product(2,4);
-    cout<<x<<endl;
+    // int x = product(2,4);
+    // cout<<x<<endl;
+    greet();
     return 0;
 }
