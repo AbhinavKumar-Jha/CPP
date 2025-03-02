@@ -19,5 +19,7 @@ int main(){
     cout<<a<<" "<<b<<endl;
     swap(a,b);
     cout<<a<<" "<<b<<endl;
+    cout<<min(a,b)<<endl;
+    cout<<max(a,b)<<endl;
     return 0;
 }
