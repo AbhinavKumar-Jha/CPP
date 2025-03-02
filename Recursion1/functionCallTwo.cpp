@@ -6,6 +6,7 @@ void gun(){
 void fun(){
     cout<<"Hello PW"<<endl;
     gun();
+    return; // Khatam
 }
 int main(){
     fun();
