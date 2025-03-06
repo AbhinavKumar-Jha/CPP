@@ -7,5 +7,8 @@ int main(){
     if(n%2==0){
         cout<<n<<" is Even Number!";
     }
+    else{
+        cout<<"Odd";
+    }
     return 0;
 }
