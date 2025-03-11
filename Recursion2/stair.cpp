@@ -1,4 +1,4 @@
-// Maximum of 2 jumps 
+// Maximum of 2 jumps
 #include<iostream>
 using namespace std;
 int stair(int n){
