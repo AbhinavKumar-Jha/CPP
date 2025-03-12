@@ -10,6 +10,8 @@ void pip(int n){
     cout<<"Post "<<n<<endl;
 }
 int main(){
+    cout<<endl;
     pip(3);
+    cout<<endl;
     return 0;
 }
