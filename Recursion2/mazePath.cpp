@@ -10,6 +10,7 @@ int maze(int sr, int sc, int er, int ec){
     return totalWays;
 }
 int main(){
-    cout<<maze(0,0,2,2);
+    // this is of 3X3 matrix, written below
+    cout<<maze(1,1,3,3);
     return 0;
 }
