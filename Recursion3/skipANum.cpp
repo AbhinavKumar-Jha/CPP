@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 void removeNumber(vector<int> ans, vector<int> original, int idx) {
+    // Base Case
     if (idx == original.size()) {
         // Print the modified array
         for (int i = 0; i < ans.size(); i++) {
