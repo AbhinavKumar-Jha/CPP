@@ -1,3 +1,4 @@
+// This is more efficient method 
 #include<iostream>
 #include<string>
 using namespace std;
