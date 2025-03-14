@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 void removeChar(string ans, string original){
+    // Base case
     if(original.length()==0){
         cout<<ans;
         return;
@@ -15,3 +16,4 @@ int main(){
     removeChar("",str);
     return 0;
 }
+
