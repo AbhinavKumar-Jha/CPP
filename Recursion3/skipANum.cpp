@@ -1,3 +1,4 @@
+// Skip a Number
 #include<iostream>
 #include<vector>
 using namespace std;
