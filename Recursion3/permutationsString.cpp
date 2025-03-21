@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 void permutation(string ans, string original){
+    // Base Case
     if(original==""){
         cout<<ans<<endl;
         return;
