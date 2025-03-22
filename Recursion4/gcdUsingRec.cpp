@@ -8,5 +8,6 @@ int main(){
     int a=27;
     int b=45;
     cout<<gcd(a,b);
+    // cout<<gcd(min(a,b),max(a,b));
     return 0;
 }
