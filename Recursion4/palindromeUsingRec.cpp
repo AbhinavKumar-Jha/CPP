@@ -9,6 +9,5 @@ using namespace std;
 int main(){
     string s="racecar";
     cout<<isPalindrome(s,0,s.length()-1);
-    return 0;
-
+    return 0;    
 }
