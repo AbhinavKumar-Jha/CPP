@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int gcd(int a, int b){
+    // Base Case
     if(a==0) return b;
     else gcd(b%a,a);
 }
