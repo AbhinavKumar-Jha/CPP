@@ -16,6 +16,7 @@
 // }
 
 #include<iostream>
+#include<string>
 using namespace std;
 void generate(string s, int n){
     if(n==0){
