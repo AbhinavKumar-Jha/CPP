@@ -3,6 +3,7 @@
 #include<vector>
 using namespace std;
 void combination(vector<int> v, int arr[], int n, int target, int idx){
+    // Base Case
     if(target==0){
         for(int i=0;i<v.size();i++){
             cout<<v[i]<<" ";
