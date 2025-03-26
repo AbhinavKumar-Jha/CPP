@@ -4,6 +4,7 @@
 #include<vector>
 using namespace std;
 void generate(string s, int open, int close, int n){
+    // Base Case
     if(close==n){
         cout<<s<<endl;
         return;
