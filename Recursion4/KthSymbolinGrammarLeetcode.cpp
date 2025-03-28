@@ -1,4 +1,5 @@
 // // Leetcode 779 (K-th Symbol in Grammar)
+// // TC : O(n)
 // class Solution {
 //     public:
 //         int kthGrammar(int n, int k) {
