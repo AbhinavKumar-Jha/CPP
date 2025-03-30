@@ -12,7 +12,7 @@ int main(){
         if(arr[mid]==target){
             cout<<mid<<" is index where target is present";
             return 0;
-        } 
+        }
         if(arr[mid]<target) lo=mid+1;
         if(arr[mid]>target) hi=mid-1;
     }
