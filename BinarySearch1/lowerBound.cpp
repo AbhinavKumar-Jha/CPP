@@ -6,9 +6,10 @@ int main(){
     int x=12;
     for(int i=0;i<n;i++){
         if(arr[i]>x){
-            cout<<arr[i];
+            cout<<arr[i-1];
             break;
         }
     }
+    // T C -> O(n)
     return 0;
 }
