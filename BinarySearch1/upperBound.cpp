@@ -12,7 +12,7 @@ int main(){
         int mid=lo+(hi-lo)/2;
         if(arr[mid]==x){
             flag=true;
-            cout<<arr[mid-1];
+            cout<<arr[mid+1];
             break;
         }
        else if(arr[mid]<x) lo=mid+1;
