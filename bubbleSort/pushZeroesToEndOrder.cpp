@@ -16,7 +16,6 @@ int main(){
                 swap(arr[j],arr[j+1]);
             }
         }
-
     }
     cout<<endl;
     for(int i=0;i<n;i++){
