@@ -9,5 +9,8 @@ int main(){
     cin>>b;
     int product = a*b;
     cout<<"The product of a and b is :"<<product;
+    cout<<endl;
+    int sum = a+b;
+    cout<<"Sum of a and b is :"<<sum;
     return 0;
 }
