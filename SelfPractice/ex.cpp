@@ -13,7 +13,5 @@ int main(){
     int sum = a+b;
     cout<<"Sum of a and b is :"<<sum;
     cout<<endl;
-    int diff = a-b;
-    cout<<"The difference between a and b is: "<<diff;
     return 0;
 }
