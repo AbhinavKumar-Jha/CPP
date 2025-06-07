@@ -37,6 +37,8 @@ void mergeSort(vector<int> &v){
     mergeSort(b);
     // now merge
     merge(a,b,v);
+    a.clear(); // it reduces space complexity by deleting unused vector
+    b.clear();
 }
 int main(){
     int arr[]={5,1,3,0,4,9,6};
