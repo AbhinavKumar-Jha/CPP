@@ -1,28 +1,33 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+// Function to merge two sorted vectors into one sorted result vector
 void merge(vector<int> &a, vector<int> &b, vector<int> &res){
     int i=0; // a
     int j=0; // b
     int k=0; // res
+    // Compare elements from both vectors and put smaller one in result
     while(i<a.size() && j<b.size()){
         if(a[i]<=b[j]) res[k++]=a[i++];
         else res[k++]=b[j++];
     }
+        // If vector 'a' is exhausted, copy remaining elements from 'b'
     if(i==a.size()){ // a is at end
         while(j<b.size()){
             res[k++]=b[j++];
         }
     }
+        // If vector 'b' is exhausted, copy remaining elements from 'a'
     if(j==b.size()){ // b is at end 
         while(i<a.size()){
             res[k++]=a[i++];
         }
     }
 }
+// Recursive function to sort vector using divide and conquer approach
 void mergeSort(vector<int> &v){
     int n=v.size();
-    if(n==1) return;
+    if(n==1) return; // Base Case
     int n1 = n/2, n2 = n-n/2;
     vector<int> a(n1), b(n2);
     // copy pasting
