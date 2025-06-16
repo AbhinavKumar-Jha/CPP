@@ -65,15 +65,12 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
 // Merge function using start, mid, and end indices
 void merge(vector<int>& arr, int start, int mid, int end) {
     // Create temporary arrays for left and right subarrays
     vector<int> left(arr.begin() + start, arr.begin() + mid + 1);
-    vector<int> right(arr.begin() + mid + 1, arr.begin() + end + 1);
-    
-    int i = 0, j = 0, k = start;
-    
+    vector<int> right(arr.begin() + mid + 1, arr.begin() + end + 1);  
+    int i = 0, j = 0, k = start; 
     // Merge the temporary arrays back into arr[start..end]
     while (i < left.size() && j < right.size()) {
         if (left[i] <= right[j]) {
@@ -81,45 +78,34 @@ void merge(vector<int>& arr, int start, int mid, int end) {
         } else {
             arr[k++] = right[j++];
         }
-    }
-    
+    } 
     // Copy remaining elements of left[], if any
     while (i < left.size()) {
         arr[k++] = left[i++];
-    }
-    
+    }  
     // Copy remaining elements of right[], if any
     while (j < right.size()) {
         arr[k++] = right[j++];
     }
 }
-
 // Recursive merge sort function
 void mergeSort(vector<int>& arr, int start, int end) {
-    if (start >= end) return; // Base case: single element or invalid range
-    
-    int mid = start + (end - start) / 2; // Find middle point
-    
+    if (start >= end) return; // Base case: single element or invalid range  
+    int mid = start + (end - start) / 2; // Find middle point 
     // Recursively sort first and second halves
     mergeSort(arr, start, mid);
-    mergeSort(arr, mid + 1, end);
-    
+    mergeSort(arr, mid + 1, end); 
     // Merge the sorted halves
     merge(arr, start, mid, end);
 }
-
 int main() {
-    vector<int> arr = {5, 1, 3, 0, 4, 9, 6};
-    
+    vector<int> arr = {5, 1, 3, 0, 4, 9, 6};   
     cout << "Original array: ";
     for (int x : arr) cout << x << " ";
-    cout << endl;
-    
-    mergeSort(arr, 0, arr.size() - 1);
-    
+    cout << endl;   
+    mergeSort(arr, 0, arr.size() - 1);   
     cout << "Sorted array: ";
     for (int x : arr) cout << x << " ";
-    cout << endl;
-    
+    cout << endl;   
     return 0;
 }
