@@ -38,7 +38,6 @@
 // public:
 //     vector<int> productExceptSelf(vector<int>& nums) {
 //         int n = nums.size();
-//         int product=1;
 //         vector<int> pre(n);
 //         vector<int> suf(n);
 //         // Prefix product array
@@ -62,3 +61,4 @@
 //         return pre;
 //     }
 // };
+
