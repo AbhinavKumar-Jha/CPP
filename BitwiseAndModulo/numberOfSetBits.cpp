@@ -1,5 +1,4 @@
 #include<iostream>
-#include<bits/stdc++.h>
 int count_set_bits(int n){
     return __builtin_popcount(n);
 }
