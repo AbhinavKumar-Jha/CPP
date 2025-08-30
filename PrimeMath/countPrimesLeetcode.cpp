@@ -18,7 +18,7 @@
 //         fillSieve(sieve);
 //         sieve[0]=0;
 //         sieve[1]=0;
-//         for(int i=2;i<=n;i++){
+//         for(int i=2;i<=n;i++){+
 //             if(sieve[i]==1) count++;
 //         }
 //         return count;
