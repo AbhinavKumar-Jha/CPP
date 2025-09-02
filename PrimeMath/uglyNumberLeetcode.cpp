@@ -1,5 +1,6 @@
 // // Leetcode 263 (Ugly Number)
 
+// T C -> O(logn)
 // class Solution {
 // public:
 //     bool isUgly(int n) {
