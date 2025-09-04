@@ -26,6 +26,11 @@ int size(Node* head){
     }
     return n;
 }
+void insertAtEnd(Node* head, int val){
+    Node* t = new Node(val);
+    while(head->next!=NULL) head=head->next;
+    head->next=t;
+}
 int main(){
     Node* a = new Node(10);
     Node* b = new Node(20);
@@ -39,5 +44,7 @@ int main(){
     // cout<<a->next->next->next->val;
     display(a);
     cout<<size(a);
+    insertAtEnd(a,80);
+    display(a);
     return 0;
 }
