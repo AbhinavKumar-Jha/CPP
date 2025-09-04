@@ -41,6 +41,14 @@ int main(){
     // print karani hai d ki value
     // (*(*(a.next).next).next).val;
     // cout<<(*((*((*(a.next)).next)).next)).val;
-    cout<<(((a.next)->next)->next)->val;
+
+    // cout<<(((a.next)->next)->next)->val;
+
+    Node temp = a;
+    while(1){
+        cout<<temp.val<<" ";
+        if(temp.next==NULL) break;
+        temp = *(temp.next);
+    }
     return 0;
 }
