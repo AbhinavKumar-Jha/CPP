@@ -51,6 +51,21 @@ public:
             size++;
         }
     }
+    int getAtIdx(int idx){
+        if(idx<0 || idx>=size){
+            cout<<"Invalid Index";
+            return -1;
+        }
+        else if(idx==0) return head->val;
+        else if(idx==size-1) return tail->val;
+        else{
+            Node* temp = head;
+            for(int i=1;i<=idx;i++){
+                temp=temp->next;
+            }
+            return temp->val;
+        }
+    }
     void display(){
         Node* temp = head;
         while(temp!=NULL){
@@ -76,4 +91,6 @@ int main(){
     ll.display();
     ll.insertAtIdx(2,5);
     ll.display();
+    cout<<ll.getAtIdx(2)<<endl;
+
 }
