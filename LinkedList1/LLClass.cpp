@@ -27,6 +27,15 @@ public:
         }
         size++;
     }
+    void insertAtHead(int val){
+        Node* temp = new Node(val);
+        if(size==0) head = tail = temp;
+        else{
+            temp->next=head;
+            head=temp;
+        }
+        size++;
+    }
     void display(){
         Node* temp = head;
         while(temp!=NULL){
@@ -46,5 +55,6 @@ int main(){
     ll.insertAtEnd(40);
     ll.display();
     // cout<<ll.size;
-    
+    ll.insertAtHead(50);
+    ll.display();
 }
