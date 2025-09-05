@@ -36,6 +36,21 @@ public:
         }
         size++;
     }
+    void insertAtIdx(int idx, int val){
+        if(idx<0 || idx>size) cout<<"Invalid Index"<<endl;
+        else if(idx==0) insertAtHead(val);
+        else if(idx==size) insertAtEnd(val);
+        else{
+            Node* t = new Node(val);
+            Node* temp = head;
+            for(int i=1;i<idx;i++){
+               temp=temp->next; 
+            }
+            t->next = temp->next;
+            temp->next=t;
+            size++;
+        }
+    }
     void display(){
         Node* temp = head;
         while(temp!=NULL){
@@ -56,5 +71,9 @@ int main(){
     ll.display();
     // cout<<ll.size;
     ll.insertAtHead(50);
+    ll.display();
+    ll.insertAtHead(25);
+    ll.display();
+    ll.insertAtIdx(2,5);
     ll.display();
 }
