@@ -17,3 +17,20 @@
 //         return mid;
 //     }
 // };
+
+
+// // What interviewer wants -> To solve this in one pass
+
+// class Solution {
+// public:
+//     ListNode* middleNode(ListNode* head) {
+//         // Now Second method -> in one pass
+//         ListNode* slow = head;
+//         ListNode* fast = head;
+//         while(fast!=NULL && fast->next!=NULL){ 
+//             slow = slow->next;
+//             fast=fast->next->next;
+//         } 
+//         return slow;
+//     }
+// };
