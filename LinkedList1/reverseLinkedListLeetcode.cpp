@@ -40,8 +40,7 @@
 // };
 
 
-// // Better approach
-
+// // Best approach
 // //  TC-> O(n)
 // //  SC-> O(1)
 
@@ -61,3 +60,15 @@
 //     }
 // };
 
+// // if interviewer aks do solve this recursievely
+
+// class Solution {
+// public:
+//     ListNode* reverseList(ListNode* head) {
+//         if(head==NULL || head->next==NULL) return head;
+//         ListNode* newHead = reverseList(head->next);
+//         head->next->next=head;
+//         head->next=NULL;
+//         return newHead;
+//     }
+// };
