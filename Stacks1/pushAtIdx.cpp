@@ -8,6 +8,7 @@ void print(stack<int>& st){
         st.pop();
     }
     // putting elements back from temp to stack
+    
     while(temp.size()>0){
         cout<<temp.top()<<" ";
         st.push(temp.top());
