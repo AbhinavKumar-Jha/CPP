@@ -15,6 +15,7 @@ void print(stack<int>& st){
     }
     cout<<endl;
 }
+// Push at Index
 void pushAtIdx(stack<int>& st, int idx, int val){
     stack<int> temp;
     while(st.size()>idx){
