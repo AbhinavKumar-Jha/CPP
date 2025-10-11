@@ -48,7 +48,6 @@ int main(){
         // pop all the elements smaller than arr[i]
         
     }
-
     for(int i=0;i<n;i++){
         cout<<nge[i]<<" ";
     }
