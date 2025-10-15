@@ -46,7 +46,6 @@ int main(){
     st.push(arr[n-1]);
     for(int i=n-2;i>=0;i--){
         // pop all the elements smaller than arr[i]
-        
     }
     for(int i=0;i<n;i++){
         cout<<nge[i]<<" ";
