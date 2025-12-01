@@ -36,3 +36,33 @@
 //     }
 // };
 
+
+// // Method -> 2 (Best Solution)
+
+// class MinStack {
+// public:
+//     stack<int> st;
+//     stack<int> helper;
+//     MinStack() { // constructor
+        
+//     }
+    
+//     void push(int val) {
+//         st.push(val);
+//         if(helper.size()==0 || val<helper.top()) helper.push(val);
+//         else helper.push(helper.top());
+//     }
+    
+//     void pop() {
+//         st.pop();
+//         helper.pop();
+//     }
+    
+//     int top() { // O(1)
+//         return st.top();
+//     }
+    
+//     int getMin() {
+//         return helper.top();
+//     }
+// };
