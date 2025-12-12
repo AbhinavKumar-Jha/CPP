@@ -29,11 +29,6 @@ void reverse(queue<int>& q){
 }
 int main(){
     queue<int> q;
-    // push
-    // pop
-    // fron -> top
-    // size, empty
-    // back
     q.push(10);
     q.push(20);
     q.push(30);
