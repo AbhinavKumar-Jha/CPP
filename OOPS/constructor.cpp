@@ -17,7 +17,6 @@ class car{
         price = d;
         
 }
-
 };
 // void print(car c){
 //     cout<<c.brand<<" "<<c.type<<" "<<c.seats<<" "<<c.price<<endl;
